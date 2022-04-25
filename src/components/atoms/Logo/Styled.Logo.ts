@@ -7,7 +7,7 @@ interface StyledLogoTextProps {
 
 const StyledLogoText = styled.Text<StyledLogoTextProps>`
   color: ${props => props.color};
-  font-size: ${props => props.fontSize};
+  font-size: ${props => props.fontSize + 'px'};
   font-family: 'AmazonEmberDisplay-Bd';
   text-align: center;
 `;

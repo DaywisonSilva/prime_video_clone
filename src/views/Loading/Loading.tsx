@@ -1,12 +1,15 @@
 import React from 'react';
+import {StackScreenProps} from '@react-navigation/stack';
 
 //  components
 import {Logo} from '@components/atoms/index';
 import {StyledLoading} from './Loading.styled';
 
-function Loading() {
+type Props = StackScreenProps<RootStackParamList, 'Home'>;
+
+function Loading({navigation}: Props) {
   return (
-    <StyledLoading>
+    <StyledLoading onTouchStart={() => navigation.replace('Home')}>
       <Logo />
     </StyledLoading>
   );

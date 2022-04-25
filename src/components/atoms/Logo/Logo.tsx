@@ -1,4 +1,5 @@
 import React from 'react';
+import {Text} from 'react-native';
 import {RFPercentage} from 'react-native-responsive-fontsize';
 import StyledLogoText from './Styled.Logo';
 

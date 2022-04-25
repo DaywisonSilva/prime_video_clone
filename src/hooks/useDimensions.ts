@@ -5,7 +5,7 @@ const useDimensions = () => {
   const [dimensions, setDimensions] = useState(Dimensions.get('screen'));
 
   Dimensions.addEventListener('change', dimensions =>
-    setDimensions(dimensions.screen),
+    setDimensions(dimensions.screen)
   );
   return {...dimensions};
 };
