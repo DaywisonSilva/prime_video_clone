@@ -1,0 +1,22 @@
+{
+  "banners": [
+    {
+      "id": 1,
+      "name": "Invincible",
+      "url_card": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/invincible-card.jpg",
+      "url_cover": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/invincible-cover.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "The Boys",
+      "url_card": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/theboys/theboys-card.jpg",
+      "url_cover": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/theboys/theboys-cover.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Upload",
+      "url_card": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/upload/upload-card.jpg",
+      "url_cover": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/upload/upload-cover.jpg"
+    }
+  ]
+}

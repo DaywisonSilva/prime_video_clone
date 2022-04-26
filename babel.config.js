@@ -5,6 +5,7 @@ module.exports = {
       'module-resolver',
       {
         root: ['./src'],
+        extensions: ['.ts', '.tsx', '.jsx', '.js', '.json'],
         alias: {
           '@components': './src/components',
           '@utils': './src/utils',
@@ -13,8 +14,9 @@ module.exports = {
           '@routes': './src/routes',
           '@themes': './src/themes',
           '@assets': './src/assets',
-        },
-      },
-    ],
-  ],
+          '@api': './src/api'
+        }
+      }
+    ]
+  ]
 };

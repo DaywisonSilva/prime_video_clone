@@ -1,3 +1,3 @@
-import defaultTheme from "./default";
+import {defaultTheme, COLORS} from './default';
 
-export {defaultTheme}
+export {defaultTheme, COLORS};

@@ -1,3 +1,4 @@
 import Logo from './Logo';
+import Card from './Card';
 
-export {Logo};
+export {Logo, Card};

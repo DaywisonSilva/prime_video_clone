@@ -68,7 +68,8 @@
       "@views/*": ["views/*"],
       "@routes/*": ["routes/*"],
       "@themes/*": ["themes/*"],
-      "@assets/*": ["assets/*"]
+      "@assets/*": ["assets/*"],
+      "@api/*": ["api/*"]
     }
   },
   "exclude": [
