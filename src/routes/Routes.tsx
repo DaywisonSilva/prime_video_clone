@@ -4,21 +4,25 @@ import React from 'react';
 import {Loading, Home} from '@views/index';
 
 //  External Utils
-import {NavigationContainer} from '@react-navigation/native';
+import {DefaultTheme, NavigationContainer} from '@react-navigation/native';
 import {
   CardStyleInterpolators,
   createStackNavigator
 } from '@react-navigation/stack';
-
-type RootStackParamList = {
-  Home: undefined;
-  Loading: undefined;
-};
+import {COLORS} from '@themes/default';
 
 const Stack = createStackNavigator<RootStackParamList>();
 
 const Routes = () => (
-  <NavigationContainer>
+  <NavigationContainer
+    theme={{
+      ...DefaultTheme,
+      colors: {
+        ...DefaultTheme.colors,
+        background: COLORS.darkBluePrimary,
+        primary: COLORS.darkBlueSecondary
+      }
+    }}>
     <Stack.Navigator
       initialRouteName="Loading"
       screenOptions={{headerShown: false}}>

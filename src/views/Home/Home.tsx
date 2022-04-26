@@ -1,61 +1,35 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 //  Components
-import {FlatList, View} from 'react-native';
-import {Card, Logo} from '@components/atoms';
+import {View} from 'react-native';
+import {Logo} from '@components/atoms';
 import {StyledHomeSafeAreaView} from './Home.styled';
-
-//  API
-import API from '@api/index';
 
 //  resources
 import {StackScreenProps} from '@react-navigation/stack';
+import useDimensions from '@hooks/useDimensions';
+import ListCard from '@components/molecules/ListCard';
 
 type Props = StackScreenProps<RootStackParamList, 'Home'>;
 
-function Home({navigation}: Props) {
-  const [cards, setCards] = useState<Array<Card>>([]);
+function Home({navigation, route}: Props) {
+  const {bannerCards} = route.params;
+  const {width} = useDimensions();
 
-  useEffect(() => {
-    setTimeout(() => {}, 2000);
-    (async () => {
-      const cards: Card[] = await API.get(
-        'https://ea51-2804-d4b-9dd5-8b00-158c-59e2-c1a9-a3c8.sa.ngrok.io/banners'
-      );
-      setCards(cards);
-    })();
-  }, []);
+  const moveToRight = width * 0.078;
+
+  useEffect(() => {}, []);
 
   return (
-    <StyledHomeSafeAreaView
-    // onTouchStart={() => navigation.replace('Loading')}
-    >
+    <StyledHomeSafeAreaView>
       <View
         style={{
-          paddingLeft: 10,
-          paddingRight: 10,
           paddingTop: 35
         }}>
-        <Logo horizontal />
-        <View style={{width: '100%', height: 172, marginTop: 20}}>
-          {/* {cards.length ? ( */}
-          <FlatList
-            data={cards}
-            ItemSeparatorComponent={() => (
-              <View
-                style={{
-                  width: 30
-                }}
-              />
-            )}
-            horizontal
-            renderItem={({item}) => <Card {...item} />}
-            keyExtractor={item => item.id.toString()}
-          />
-          {/* ) : null} */}
-
-          {/* <Card name={cards[0].name!} url_card={cards[0].url_card} /> */}
+        <View style={{marginBottom: 24.35, paddingLeft: '7.8%'}}>
+          <Logo horizontal fontSize={3.5} />
         </View>
+        <ListCard cards={bannerCards} isBanner />
       </View>
     </StyledHomeSafeAreaView>
   );

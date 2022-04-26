@@ -1,6 +1,9 @@
-const get = async (url: string) => {
+//  ENV
+import {API_BASE_URL} from '@env';
+
+const get = async (endpoint: string) => {
   try {
-    const data = await fetch(url);
+    const data = await fetch(API_BASE_URL + endpoint);
     const json = await data.json();
     return json;
   } catch (e) {

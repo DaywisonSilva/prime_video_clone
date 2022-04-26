@@ -5,18 +5,20 @@ import StyledLogoText from './Styled.Logo';
 
 interface LogoProps {
   horizontal?: boolean;
+  fontSize: number;
 }
 
-function Logo({horizontal}: LogoProps) {
+function Logo({horizontal, fontSize}: LogoProps) {
   return (
     <View
       style={{
         flexDirection: horizontal ? 'row' : 'column'
       }}>
-      <StyledLogoText color="#00B9E7" fontSize={RFPercentage(5)}>
+      <StyledLogoText color="#00B9E7" fontSize={RFPercentage(fontSize)}>
         prime
       </StyledLogoText>
-      <StyledLogoText color="#fff" fontSize={RFPercentage(5)}>
+      {horizontal && <View style={{width: 10}} />}
+      <StyledLogoText color="#fff" fontSize={RFPercentage(fontSize)}>
         video
       </StyledLogoText>
     </View>

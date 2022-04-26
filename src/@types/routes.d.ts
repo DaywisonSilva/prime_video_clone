@@ -1,4 +1,6 @@
 type RootStackParamList = {
-  Home: undefined;
+  Home: {
+    bannerCards: Array<Card>;
+  };
   Loading: undefined;
 };

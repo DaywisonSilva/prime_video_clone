@@ -271,6 +271,15 @@
   resolved "https://registry.npmjs.org/@babel/parser/-/parser-7.17.9.tgz"
   integrity sha512-vqUSBLP8dQHFPdPi9bc5GK9vRkYHJ49fsZdtoJ8EQ8ibpwk5rPKfvNIwChB0KVXcIjcepEBBd2VHC5r9Gy8ueg==
 
+"@babel/plugin-proposal-async-generator-functions@^7.0.0":
+  version "7.16.8"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-async-generator-functions/-/plugin-proposal-async-generator-functions-7.16.8.tgz#3bdd1ebbe620804ea9416706cd67d60787504bc8"
+  integrity sha512-71YHIvMuiuqWJQkebWJtdhQTfd4Q4mF76q2IX37uZPkG9+olBxsX+rH1vkhFto4UeJZ9dPY2s+mDvhDm1u2BGQ==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.16.7"
+    "@babel/helper-remap-async-to-generator" "^7.16.8"
+    "@babel/plugin-syntax-async-generators" "^7.8.4"
+
 "@babel/plugin-proposal-class-properties@^7.0.0", "@babel/plugin-proposal-class-properties@^7.13.0":
   version "7.16.7"
   resolved "https://registry.npmjs.org/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.16.7.tgz"
@@ -555,6 +564,13 @@
     "@babel/helper-plugin-utils" "^7.16.7"
     "@babel/helper-simple-access" "^7.17.7"
     babel-plugin-dynamic-import-node "^2.3.3"
+
+"@babel/plugin-transform-named-capturing-groups-regex@^7.0.0":
+  version "7.16.8"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-named-capturing-groups-regex/-/plugin-transform-named-capturing-groups-regex-7.16.8.tgz#7f860e0e40d844a02c9dcf9d84965e7dfd666252"
+  integrity sha512-j3Jw+n5PvpmhRR+mrgIh04puSANCk/T/UA3m3P1MjJkhlK906+ApHhDIqBQDdOgL/r1UYpz4GNclTXxyZrYGSw==
+  dependencies:
+    "@babel/helper-create-regexp-features-plugin" "^7.16.7"
 
 "@babel/plugin-transform-object-assign@^7.0.0":
   version "7.16.7"
@@ -1478,6 +1494,11 @@
   version "15.7.5"
   resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.5.tgz"
   integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
+
+"@types/react-native-dotenv@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@types/react-native-dotenv/-/react-native-dotenv-0.2.0.tgz#32c58422a422c1adf68acce363ed791314d5a8e7"
+  integrity sha512-ZxX+dU/yoQc0jTk+/NWttkiuXceJyN5FpOSqDl0WynN5GDzxwH7OMruQ47qcY8llo2RD3irjvzJ9BwC8gDiq0A==
 
 "@types/react-native@^0.65":
   version "0.65.22"
@@ -2806,6 +2827,11 @@ domexception@^2.0.1:
   integrity sha512-yxJ2mFy/sibVQlu5qHjOkf9J3K6zgmCxgJ94u2EdvDOV09H+32LtRswEcUsmUWN72pVLOEnTSRaIVVzVQgS0dg==
   dependencies:
     webidl-conversions "^5.0.0"
+
+dotenv@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-10.0.0.tgz#3d4227b8fb95f81096cdd2b66653fb2c7085ba81"
+  integrity sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -4996,7 +5022,7 @@ metro-minify-uglify@0.67.0:
   dependencies:
     uglify-es "^3.1.9"
 
-metro-react-native-babel-preset@0.67.0, metro-react-native-babel-preset@^0.67.0:
+metro-react-native-babel-preset@0.67.0:
   version "0.67.0"
   resolved "https://registry.npmjs.org/metro-react-native-babel-preset/-/metro-react-native-babel-preset-0.67.0.tgz"
   integrity sha512-tgTG4j0SKwLHbLRELMmgkgkjV1biYkWlGGKOmM484/fJC6bpDikdaFhfjsyE+W+qt7I5szbCPCickMTNQ+zwig==
@@ -5032,6 +5058,51 @@ metro-react-native-babel-preset@0.67.0, metro-react-native-babel-preset@^0.67.0:
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
     "@babel/plugin-transform-react-jsx-source" "^7.0.0"
     "@babel/plugin-transform-regenerator" "^7.0.0"
+    "@babel/plugin-transform-runtime" "^7.0.0"
+    "@babel/plugin-transform-shorthand-properties" "^7.0.0"
+    "@babel/plugin-transform-spread" "^7.0.0"
+    "@babel/plugin-transform-sticky-regex" "^7.0.0"
+    "@babel/plugin-transform-template-literals" "^7.0.0"
+    "@babel/plugin-transform-typescript" "^7.5.0"
+    "@babel/plugin-transform-unicode-regex" "^7.0.0"
+    "@babel/template" "^7.0.0"
+    react-refresh "^0.4.0"
+
+metro-react-native-babel-preset@^0.70.2:
+  version "0.70.2"
+  resolved "https://registry.yarnpkg.com/metro-react-native-babel-preset/-/metro-react-native-babel-preset-0.70.2.tgz#462e7370b4d36c4c5f6335c0fa06bebec1007543"
+  integrity sha512-8NNrzeD6mzivWn/G3Vu8XZ1pAMof3BkcJeBmcySkB/E3XdbLrT4FIy/cUmL3gNmSp+Fz7xc62WKP5sPF1KL3QQ==
+  dependencies:
+    "@babel/core" "^7.14.0"
+    "@babel/plugin-proposal-async-generator-functions" "^7.0.0"
+    "@babel/plugin-proposal-class-properties" "^7.0.0"
+    "@babel/plugin-proposal-export-default-from" "^7.0.0"
+    "@babel/plugin-proposal-nullish-coalescing-operator" "^7.0.0"
+    "@babel/plugin-proposal-object-rest-spread" "^7.0.0"
+    "@babel/plugin-proposal-optional-catch-binding" "^7.0.0"
+    "@babel/plugin-proposal-optional-chaining" "^7.0.0"
+    "@babel/plugin-syntax-dynamic-import" "^7.0.0"
+    "@babel/plugin-syntax-export-default-from" "^7.0.0"
+    "@babel/plugin-syntax-flow" "^7.2.0"
+    "@babel/plugin-syntax-nullish-coalescing-operator" "^7.0.0"
+    "@babel/plugin-syntax-optional-chaining" "^7.0.0"
+    "@babel/plugin-transform-arrow-functions" "^7.0.0"
+    "@babel/plugin-transform-async-to-generator" "^7.0.0"
+    "@babel/plugin-transform-block-scoping" "^7.0.0"
+    "@babel/plugin-transform-classes" "^7.0.0"
+    "@babel/plugin-transform-computed-properties" "^7.0.0"
+    "@babel/plugin-transform-destructuring" "^7.0.0"
+    "@babel/plugin-transform-exponentiation-operator" "^7.0.0"
+    "@babel/plugin-transform-flow-strip-types" "^7.0.0"
+    "@babel/plugin-transform-function-name" "^7.0.0"
+    "@babel/plugin-transform-literals" "^7.0.0"
+    "@babel/plugin-transform-modules-commonjs" "^7.0.0"
+    "@babel/plugin-transform-named-capturing-groups-regex" "^7.0.0"
+    "@babel/plugin-transform-parameters" "^7.0.0"
+    "@babel/plugin-transform-react-display-name" "^7.0.0"
+    "@babel/plugin-transform-react-jsx" "^7.0.0"
+    "@babel/plugin-transform-react-jsx-self" "^7.0.0"
+    "@babel/plugin-transform-react-jsx-source" "^7.0.0"
     "@babel/plugin-transform-runtime" "^7.0.0"
     "@babel/plugin-transform-shorthand-properties" "^7.0.0"
     "@babel/plugin-transform-spread" "^7.0.0"
@@ -5917,6 +5988,13 @@ react-native-codegen@^0.0.13:
     flow-parser "^0.121.0"
     jscodeshift "^0.13.1"
     nullthrows "^1.1.1"
+
+react-native-dotenv@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/react-native-dotenv/-/react-native-dotenv-3.3.1.tgz#8f399cf28ca77d860d8e7f7323e439fa60a8ca0b"
+  integrity sha512-gAKXout1XCwCqJ3QPGoQAF2eRzOHgOnwg3x19z+ssow8bDIksJeKBqvoHDyGziVilAIP1J0bEC9Jf+VF8nFang==
+  dependencies:
+    dotenv "^10.0.0"
 
 react-native-gesture-handler@^2.4.1:
   version "2.4.1"
