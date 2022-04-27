@@ -3,25 +3,21 @@ import React, {useEffect, useState} from 'react';
 //  Components
 import {View} from 'react-native';
 import {Logo} from '@components/atoms';
-import {StyledHomeSafeAreaView} from './Home.styled';
+import {StyledHomeView} from './Home.styled';
 
 //  resources
 import {StackScreenProps} from '@react-navigation/stack';
-import useDimensions from '@hooks/useDimensions';
 import ListCard from '@components/molecules/ListCard';
 
 type Props = StackScreenProps<RootStackParamList, 'Home'>;
 
-function Home({navigation, route}: Props) {
+function Home({route}: Props) {
   const {bannerCards} = route.params;
-  const {width} = useDimensions();
-
-  const moveToRight = width * 0.078;
 
   useEffect(() => {}, []);
 
   return (
-    <StyledHomeSafeAreaView>
+    <StyledHomeView>
       <View
         style={{
           paddingTop: 35
@@ -31,7 +27,7 @@ function Home({navigation, route}: Props) {
         </View>
         <ListCard cards={bannerCards} isBanner />
       </View>
-    </StyledHomeSafeAreaView>
+    </StyledHomeView>
   );
 }
 

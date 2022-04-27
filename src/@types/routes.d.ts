@@ -3,4 +3,8 @@ type RootStackParamList = {
     bannerCards: Array<Card>;
   };
   Loading: undefined;
+  Content: {
+    id: number;
+    urlCover: string;
+  };
 };

@@ -1,14 +1,14 @@
 import styled from 'styled-components/native';
 
-const StyledSkeletonSafeAreaView = styled.SafeAreaView`
+const StyledSkeletonView = styled.View`
   flex: 1;
   width: 100%;
   background-color: ${props => props.theme.backgroundColor};
 `;
 
-const StyledHomeSafeAreaView = styled.SafeAreaView`
+const StyledHomeView = styled.View`
   flex: 1;
   background-color: ${props => props.theme.backgroundColor};
 `;
 
-export {StyledSkeletonSafeAreaView, StyledHomeSafeAreaView};
+export {StyledSkeletonView, StyledHomeView};

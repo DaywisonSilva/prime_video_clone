@@ -10,6 +10,7 @@ import {
   createStackNavigator
 } from '@react-navigation/stack';
 import {COLORS} from '@themes/default';
+import Content from '@views/Content';
 
 const Stack = createStackNavigator<RootStackParamList>();
 
@@ -32,6 +33,14 @@ const Routes = () => (
         component={Home}
         options={{
           cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS
+        }}
+      />
+      <Stack.Screen
+        name="Content"
+        component={Content}
+        options={{
+          cardStyleInterpolator:
+            CardStyleInterpolators.forRevealFromBottomAndroid
         }}
       />
     </Stack.Navigator>

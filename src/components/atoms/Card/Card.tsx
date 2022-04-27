@@ -1,10 +1,10 @@
-import useDimensions from '@hooks/useDimensions';
+import {useNavigation} from '@react-navigation/native';
+import {StackNavigationProp} from '@react-navigation/stack';
 import {COLORS} from '@themes/default';
 import React, {useState} from 'react';
 
 //  Components
 import {Image, TouchableOpacity, View} from 'react-native';
-
 import SkeletonPlaceholder from 'react-native-skeleton-placeholder';
 
 type CardProps = Card & {
@@ -12,18 +12,19 @@ type CardProps = Card & {
   height: number;
 };
 
-function Card({
-  name,
-  url_card,
-  url_cover,
-  width,
-  height
-}: Omit<CardProps, 'id'>) {
+type Props = StackNavigationProp<RootStackParamList, 'Home'>;
+
+function Card({name, url_card, url_cover, width, height, id}: CardProps) {
   const [loading, setLoading] = useState<boolean>(true);
+  const navigation = useNavigation<Props>();
+
+  const goToContentScreen = async () => {
+    navigation.navigate('Content', {id: id, urlCover: url_cover});
+  };
 
   return (
     <>
-      <TouchableOpacity activeOpacity={0.8}>
+      <TouchableOpacity activeOpacity={0.8} onPress={() => goToContentScreen()}>
         <View>
           <Image
             source={{uri: url_card}}
