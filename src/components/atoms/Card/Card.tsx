@@ -43,8 +43,8 @@ function Card({name, url_card, url_cover, width, height, id}: CardProps) {
           backgroundColor={COLORS.darkBlueSecondary}
           highlightColor={COLORS.darkBluePrimary}>
           <SkeletonPlaceholder.Item
-            width={310}
-            height={172}
+            width={width}
+            height={height}
             borderRadius={20}
           />
         </SkeletonPlaceholder>

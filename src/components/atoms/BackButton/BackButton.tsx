@@ -13,7 +13,7 @@ function BackButton({onPress}: BackButtonProps) {
     <StyledTouchableOpacity activeOpacity={0.9} onPress={onPress}>
       <StyledBackButton>
         <ChevronLeft
-          color={COLORS.darkBlueSecondary}
+          color={COLORS.backButton}
           width="80%"
           height="80%"
           style={{right: 3}}
