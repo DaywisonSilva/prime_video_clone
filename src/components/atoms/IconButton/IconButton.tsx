@@ -1,18 +1,30 @@
-import {COLORS} from '@themes/default';
 import React from 'react';
-import {View, TouchableOpacity, Text} from 'react-native';
+import {COLORS} from '@themes/default';
 import {Download} from 'react-native-feather';
+import {StyledIconButton, StyledIconButtonText} from './IconButton.styled';
+import useDimensions from '@hooks/useDimensions';
+import {RFPercentage} from 'react-native-responsive-fontsize';
 
 interface IconButtonProps {
   label?: string;
   icon: string;
 }
 function IconButton({label, icon}: IconButtonProps) {
+  const {width} = useDimensions();
+
   return (
-    <TouchableOpacity>
-      <Download stroke={COLORS.darkBlueThird} width={100} height={100} />
-      {label && <Text>{label}</Text>}
-    </TouchableOpacity>
+    <StyledIconButton>
+      <Download
+        stroke={COLORS.darkBlueThird}
+        width={width * 0.078}
+        height={width * 0.078}
+      />
+      {label && (
+        <StyledIconButtonText fontSize={RFPercentage(2.2)}>
+          {label}
+        </StyledIconButtonText>
+      )}
+    </StyledIconButton>
   );
 }
 
