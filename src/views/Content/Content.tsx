@@ -1,8 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
 //  Components
-import {ImageBackground, View, ScrollView} from 'react-native';
-import {Logo} from '@components/atoms';
+import {View, ScrollView} from 'react-native';
 import {StyledImageBackground, StyledContentOverlay} from './Content.styled';
 
 //  resources
@@ -10,6 +9,8 @@ import {StackScreenProps} from '@react-navigation/stack';
 import LinearGradient from 'react-native-linear-gradient';
 import {COLORS} from '@themes/default';
 import BackButton from '@components/atoms/BackButton';
+import {ListTabs} from '@components/molecules';
+import {IconButton} from '@components/atoms';
 
 type Props = StackScreenProps<RootStackParamList, 'Content'>;
 
@@ -28,6 +29,8 @@ function Content({route, navigation}: Props) {
           </StyledContentOverlay>
         </StyledImageBackground>
         <BackButton onPress={() => navigation.goBack()} />
+        <ListTabs list={['episódios', 'informações']} />
+        <IconButton label="teste" icon="test" />
       </ScrollView>
     </View>
   );

@@ -8,7 +8,7 @@ interface StyledTabProps {
 }
 
 const StyledTab = styled.View<StyledTabProps>`
-  width: ${width * 0.26}px;
+  padding: 0 ${width * 0.06}px;
   height: ${width * 0.26 * 0.37}px;
   justify-content: center;
   background-color: ${props =>

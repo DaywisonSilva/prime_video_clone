@@ -1,16 +1,13 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 
 //  Components
-import {ScrollView, SectionList, View} from 'react-native';
+import {ScrollView, View} from 'react-native';
 import {Logo} from '@components/atoms';
 import {StyledHomeView} from './Home.styled';
 
 //  resources
 import {StackScreenProps} from '@react-navigation/stack';
-import ListCard from '@components/molecules/ListCard';
-import Tab from '@components/atoms/Tab';
-import {COLORS} from '@themes/default';
-import ListTabs from '@components/molecules/ListTabs';
+import {ListCard, ListTabs} from '@components/molecules/';
 
 type Props = StackScreenProps<RootStackParamList, 'Home'>;
 
