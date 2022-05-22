@@ -3,4 +3,12 @@ type Card = {
   name: string;
   url_card: string;
   url_cover: string;
+  episodes: Array<Episode>;
+};
+
+type Episode = {
+  episode: string;
+  title: string;
+  image: string;
+  duration: string;
 };

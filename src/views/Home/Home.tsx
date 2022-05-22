@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
 //  Components
 import {ScrollView, View} from 'react-native';
@@ -8,13 +8,12 @@ import {StyledHomeView} from './Home.styled';
 //  resources
 import {StackScreenProps} from '@react-navigation/stack';
 import {ListCard, ListTabs} from '@components/molecules/';
+import {BottomTabs} from '@routes/index';
 
 type Props = StackScreenProps<RootStackParamList, 'Home'>;
 
 function Home({route}: Props) {
   const {bannerCards} = route.params;
-
-  useEffect(() => {}, []);
 
   return (
     <StyledHomeView>
@@ -37,6 +36,7 @@ function Home({route}: Props) {
           </View>
         </ScrollView>
       </View>
+      <BottomTabs />
     </StyledHomeView>
   );
 }

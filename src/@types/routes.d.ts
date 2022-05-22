@@ -6,5 +6,6 @@ type RootStackParamList = {
   Content: {
     id: number;
     urlCover: string;
+    episodes: Array<Episode>;
   };
 };

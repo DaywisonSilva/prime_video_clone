@@ -1,3 +1,4 @@
-import Routes from "./Routes";
+import Routes from './Routes';
+import BottomTabs from './BottomTabs';
 
-export default Routes
+export {Routes, BottomTabs};

@@ -12,11 +12,13 @@ import BackButton from '@components/atoms/BackButton';
 import {ListTabs} from '@components/molecules';
 import {IconButton} from '@components/atoms';
 import useDimensions from '@hooks/useDimensions';
+import {ListEpisode} from '@components/organisms';
+import BottomTabs from '@routes/BottomTabs';
 
 type Props = StackScreenProps<RootStackParamList, 'Content'>;
 
 function Content({route, navigation}: Props) {
-  const {id, urlCover} = route.params;
+  const {id, urlCover, episodes} = route.params;
   const {width} = useDimensions();
 
   return (
@@ -32,9 +34,15 @@ function Content({route, navigation}: Props) {
         </StyledImageBackground>
         <BackButton onPress={() => navigation.goBack()} />
         <ListTabs list={['episódios', 'informações']} />
-        <View style={{marginTop: width * 0.12, marginLeft: width * 0.07}}>
+        <View
+          style={{
+            marginTop: width * 0.12,
+            marginLeft: width * 0.07,
+            marginBottom: width * 0.08
+          }}>
           <IconButton label="Baixar todos" icon="test" />
         </View>
+        <ListEpisode episodes={episodes} />
       </ScrollView>
     </View>
   );
