@@ -21,10 +21,14 @@ function Loading({navigation}: Props) {
 
   useEffect(() => {
     (async () => {
-      const bannerCards: Card[] = await API.get('/banners');
-      setTimeout(() => {
-        navigation.replace('Home', {bannerCards});
-      }, 2000);
+      try {
+        const bannerCards: Card[] = await API.get('/banners');
+        setTimeout(() => {
+          navigation.replace('BottomTabs', {bannerCards});
+        }, 1000);
+      } catch (e) {
+        console.warn(e);
+      }
     })();
 
     Animated.timing(fadeAnim, {

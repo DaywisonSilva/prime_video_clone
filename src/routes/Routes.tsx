@@ -11,6 +11,7 @@ import {
 } from '@react-navigation/stack';
 import {COLORS} from '@themes/default';
 import Content from '@views/Content';
+import BottomTabs from './BottomTabs';
 
 const Stack = createStackNavigator<RootStackParamList>();
 
@@ -29,12 +30,19 @@ const Routes = () => (
       screenOptions={{headerShown: false}}>
       <Stack.Screen name="Loading" component={Loading} />
       <Stack.Screen
+        name="BottomTabs"
+        component={BottomTabs}
+        options={{
+          cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS
+        }}
+      />
+      {/* <Stack.Screen
         name="Home"
         component={Home}
         options={{
           cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS
         }}
-      />
+      />*/}
       <Stack.Screen
         name="Content"
         component={Content}
