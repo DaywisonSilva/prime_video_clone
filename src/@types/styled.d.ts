@@ -6,5 +6,6 @@ declare module 'styled-components' {
     tabBarColor: string;
     appChipColor: string;
     textColor: string;
+    fontFamily: string;
   }
 }

@@ -12,7 +12,8 @@ const defaultTheme: DefaultTheme = {
   backgroundColor: COLORS.darkBluePrimary,
   tabBarColor: COLORS.darkBlueSecondary,
   appChipColor: COLORS.whiteBlue,
-  textColor: COLORS.darkBlueThird
+  textColor: COLORS.darkBlueThird,
+  fontFamily: 'AmazonEmberDisplay-Bd'
 };
 
 export {defaultTheme, COLORS};

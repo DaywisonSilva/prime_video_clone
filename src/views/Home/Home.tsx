@@ -1,6 +1,6 @@
 //Home.tsx
 
-import React from 'react';
+import React, {useEffect} from 'react';
 
 //  Components
 import {ScrollView, View} from 'react-native';
@@ -14,7 +14,7 @@ import {ListCard, ListTabs} from '@components/molecules/';
 type Props = StackScreenProps<RootStackParamList, 'Home'>;
 
 function Home({route}: Props) {
-  const {bannerCards} = route.params;
+  const {bannerCards, contentCards, channelCards} = route.params;
 
   return (
     <StyledHomeView>
@@ -34,6 +34,16 @@ function Home({route}: Props) {
         <ScrollView>
           <View style={{marginBottom: 24}}>
             <ListCard cards={bannerCards} isBanner />
+          </View>
+          <View style={{marginBottom: 24}}>
+            <ListCard
+              cards={contentCards}
+              label="Assista com o"
+              labelEmphasis="Prime"
+            />
+          </View>
+          <View style={{marginBottom: 24}}>
+            <ListCard cards={channelCards} label="Seus canais" />
           </View>
         </ScrollView>
       </View>

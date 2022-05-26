@@ -22,21 +22,8 @@ import {COLORS} from '@themes/default';
 const Tab = createBottomTabNavigator();
 type Props = StackScreenProps<RootStackParamList, 'BottomTabs'>;
 
-function SettingsScreen() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}>
-      <Text>Settings!</Text>
-    </View>
-  );
-}
-
 export default function BottomTabs({route, navigation}: Props) {
-  const {bannerCards} = route.params;
+  const {bannerCards, contentCards, channelCards} = route.params;
   const {width} = useDimensions();
 
   return (
@@ -83,7 +70,11 @@ export default function BottomTabs({route, navigation}: Props) {
           }
         }
       })}>
-      <Tab.Screen name="Home" component={Home} initialParams={{bannerCards}} />
+      <Tab.Screen
+        name="Home"
+        component={Home}
+        initialParams={{bannerCards, contentCards, channelCards}}
+      />
       <Tab.Screen name="Search" component={Search} />
       <Tab.Screen name="Download" component={Download} />
     </Tab.Navigator>

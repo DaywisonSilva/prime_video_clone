@@ -5,7 +5,7 @@ import React, {useState} from 'react';
 import {Image, TouchableOpacity, View} from 'react-native';
 import SkeletonPlaceholder from 'react-native-skeleton-placeholder';
 
-type CardProps = Card & {
+type CardProps = ContentCard & {
   width: number;
   height: number;
   onPress: () => void;

@@ -23,8 +23,15 @@ function Loading({navigation}: Props) {
     (async () => {
       try {
         const bannerCards: Card[] = await API.get('/banners');
+        const contentCards: ContentCard[] = await API.get('/content');
+        const channelCards: ContentCard[] = await API.get('/channels');
+
         setTimeout(() => {
-          navigation.replace('BottomTabs', {bannerCards});
+          navigation.replace('BottomTabs', {
+            bannerCards,
+            contentCards,
+            channelCards
+          });
         }, 1000);
       } catch (e) {
         console.warn(e);
