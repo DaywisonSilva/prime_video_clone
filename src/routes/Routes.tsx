@@ -12,6 +12,7 @@ import {
 import {COLORS} from '@themes/default';
 import Content from '@views/Content';
 import BottomTabs from './BottomTabs';
+import Offline from '@views/Offline';
 
 const Stack = createStackNavigator<RootStackParamList>();
 
@@ -46,6 +47,14 @@ const Routes = () => (
       <Stack.Screen
         name="Content"
         component={Content}
+        options={{
+          cardStyleInterpolator:
+            CardStyleInterpolators.forRevealFromBottomAndroid
+        }}
+      />
+      <Stack.Screen
+        name="Offline"
+        component={Offline}
         options={{
           cardStyleInterpolator:
             CardStyleInterpolators.forRevealFromBottomAndroid

@@ -1,14 +1,33 @@
+import {ListTabs} from '@components/molecules';
 import {COLORS} from '@themes/default';
 import React from 'react';
-import {View} from 'react-native';
+import {
+  StyledListTabsContainer,
+  StyledSearchContainer,
+  StyledTextInput
+} from './Search.styled';
 
 function Search() {
   return (
-    <View
-      style={{
-        flex: 1,
-        backgroundColor: COLORS.white
-      }}></View>
+    <StyledSearchContainer>
+      <StyledTextInput
+        underlineColorAndroid="transparent"
+        placeholder="Pesquisar"
+        placeholderTextColor={COLORS.darkBlueThird}
+      />
+      <StyledListTabsContainer>
+        <ListTabs
+          list={[
+            'Todos',
+            'Animação',
+            'Horror',
+            'Comédia',
+            'Suspense',
+            'Ficção Científica'
+          ]}
+        />
+      </StyledListTabsContainer>
+    </StyledSearchContainer>
   );
 }
 

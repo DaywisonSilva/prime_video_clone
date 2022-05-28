@@ -21,13 +21,13 @@ function Home({route}: Props) {
       <View
         style={{
           paddingTop: 35,
-          marginBottom: 35
+          marginBottom: 15
         }}>
         <View style={{marginBottom: 24.35, paddingLeft: '7.8%'}}>
           <Logo horizontal fontSize={3.5} />
         </View>
 
-        <View style={{marginBottom: 41}}>
+        <View style={{marginBottom: 21}}>
           <ListTabs list={['home', 'originais', 'tv', 'filmes']} />
         </View>
 

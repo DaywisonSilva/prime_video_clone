@@ -11,7 +11,7 @@ const StyledSkeletonView = styled.View`
 const StyledHomeView = styled.View`
   flex: 1;
   background-color: ${props => props.theme.backgroundColor};
-  padding-bottom: ${Platform.OS === 'ios' ? width * 0.26 : width * 0.24}px;
+  padding-bottom: ${Platform.OS === 'ios' ? width * 0.28 : width * 0.26}px;
 `;
 
 export {StyledSkeletonView, StyledHomeView};

@@ -15,4 +15,6 @@ type RootStackParamList = {
     urlCover: string;
     episodes: Array<Episode>;
   };
+  Download: undefined;
+  Offline: undefined;
 };
