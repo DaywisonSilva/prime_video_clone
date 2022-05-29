@@ -29,7 +29,12 @@ function ListTabs({list}: ListTabsProps) {
     <StyledListTabs horizontal showsHorizontalScrollIndicator={false}>
       {list.map((item, index) => {
         return (
-          <View key={index} style={{marginLeft: index === 0 ? 24 : 12}}>
+          <View
+            key={index}
+            style={{
+              marginLeft: index === 0 ? 24 : 12,
+              marginRight: index === list.length - 1 ? 24 : 0
+            }}>
             <Tab
               onPress={() => setSelected(index)}
               selected={listWithSelected[index].selected}>

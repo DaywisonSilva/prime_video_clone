@@ -4,6 +4,8 @@ import styled from 'styled-components/native';
 
 const {width} = Dimensions.get('screen');
 
+const StyledInputContainer = styled.View``;
+
 const StyledSearchContainer = styled.View`
   flex: 1;
 `;
@@ -23,4 +25,16 @@ const StyledTextInput = styled.TextInput`
   color: ${COLORS.white};
 `;
 
-export {StyledSearchContainer, StyledListTabsContainer, StyledTextInput};
+const StyledIconSearchContainer = styled.View`
+  position: absolute;
+  bottom: ${width * 0.105}px;
+  right: ${width * 0.105}px;
+`;
+
+export {
+  StyledSearchContainer,
+  StyledListTabsContainer,
+  StyledTextInput,
+  StyledIconSearchContainer,
+  StyledInputContainer
+};

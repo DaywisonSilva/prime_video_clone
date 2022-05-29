@@ -59,7 +59,7 @@ function Loading({navigation}: Props) {
 
   return (
     <StyledLoading>
-      <LottieView source={AnimationPrimeVideo} autoPlay />
+      <LottieView source={AnimationPrimeVideo} autoPlay loop={false} />
       {loading && (
         <ActivityIndicator
           size="large"

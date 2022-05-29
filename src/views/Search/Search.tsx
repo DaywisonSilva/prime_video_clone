@@ -1,20 +1,33 @@
-import {ListTabs} from '@components/molecules';
-import {COLORS} from '@themes/default';
 import React from 'react';
+
+// Components
+import {ListTabs} from '@components/molecules';
+import {Search as SearchIcon} from 'react-native-feather';
 import {
+  StyledIconSearchContainer,
+  StyledInputContainer,
   StyledListTabsContainer,
   StyledSearchContainer,
   StyledTextInput
 } from './Search.styled';
 
+// utils
+import {COLORS} from '@themes/default';
+
 function Search() {
   return (
     <StyledSearchContainer>
-      <StyledTextInput
-        underlineColorAndroid="transparent"
-        placeholder="Pesquisar"
-        placeholderTextColor={COLORS.darkBlueThird}
-      />
+      <StyledInputContainer>
+        <StyledTextInput
+          underlineColorAndroid="transparent"
+          placeholder="Pesquisar"
+          placeholderTextColor={COLORS.darkBlueThird}
+        />
+        <StyledIconSearchContainer>
+          <SearchIcon color={COLORS.darkBlueThird} />
+        </StyledIconSearchContainer>
+      </StyledInputContainer>
+
       <StyledListTabsContainer>
         <ListTabs
           list={[
