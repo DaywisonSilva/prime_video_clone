@@ -1,4 +1,5 @@
 import ListCard from './ListCard';
 import ListTabs from './ListTabs';
+import ListVerticalCard from './ListVerticalCard';
 
-export {ListCard, ListTabs};
+export {ListCard, ListTabs, ListVerticalCard};

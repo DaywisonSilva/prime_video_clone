@@ -7,5 +7,6 @@ declare module 'styled-components' {
     appChipColor: string;
     textColor: string;
     fontFamily: string;
+    fontFamilyMd: string;
   }
 }

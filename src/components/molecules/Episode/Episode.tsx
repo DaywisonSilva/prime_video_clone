@@ -19,7 +19,7 @@ interface EpisodeProps {
 
 function Episode({image, episode, title, duration}: EpisodeProps) {
   return (
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback useForeground>
       <StyledEpisode>
         <StyledImageEpisode source={{uri: image}} />
         <StyledEpisodeGroup>

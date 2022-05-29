@@ -2,7 +2,12 @@ import {COLORS} from '@themes/default';
 import React, {useState} from 'react';
 
 //  Components
-import {Image, TouchableOpacity, View} from 'react-native';
+import {
+  Image,
+  TouchableNativeFeedback,
+  TouchableOpacity,
+  View
+} from 'react-native';
 import SkeletonPlaceholder from 'react-native-skeleton-placeholder';
 
 type CardProps = ContentCard & {
@@ -16,7 +21,7 @@ function Card({name, url_card, width, height, onPress}: CardProps) {
 
   return (
     <>
-      <TouchableOpacity activeOpacity={0.8} onPress={() => onPress()}>
+      <TouchableNativeFeedback onPress={() => onPress()} useForeground>
         <View>
           <Image
             source={{uri: url_card}}
@@ -29,7 +34,7 @@ function Card({name, url_card, width, height, onPress}: CardProps) {
             onLoadEnd={() => setTimeout(() => setLoading(false), 500)}
           />
         </View>
-      </TouchableOpacity>
+      </TouchableNativeFeedback>
       {loading && (
         <SkeletonPlaceholder
           backgroundColor={COLORS.darkBlueSecondary}

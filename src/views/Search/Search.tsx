@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
 // Components
-import {ListTabs} from '@components/molecules';
+import {ListTabs, ListVerticalCard} from '@components/molecules';
 import {Search as SearchIcon} from 'react-native-feather';
 import {
   StyledIconSearchContainer,
@@ -13,8 +13,21 @@ import {
 
 // utils
 import {COLORS} from '@themes/default';
+import {Card} from '@components/atoms';
+import API from '@api/index';
 
 function Search() {
+  const [bannerCards, setBannerCards] = useState<Array<Card | ContentCard>>([]);
+
+  useEffect(() => {
+    (async () => {
+      const bannerCardsData: Array<Card> = await API.get('/banners');
+      const contentCards: Array<ContentCard> = await API.get('/content');
+
+      setBannerCards([...bannerCardsData, ...contentCards]);
+    })();
+  }, []);
+
   return (
     <StyledSearchContainer>
       <StyledInputContainer>
@@ -40,6 +53,8 @@ function Search() {
           ]}
         />
       </StyledListTabsContainer>
+
+      <ListVerticalCard cards={bannerCards} />
     </StyledSearchContainer>
   );
 }

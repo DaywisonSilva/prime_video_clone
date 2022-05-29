@@ -13,7 +13,8 @@ const defaultTheme: DefaultTheme = {
   tabBarColor: COLORS.darkBlueSecondary,
   appChipColor: COLORS.whiteBlue,
   textColor: COLORS.darkBlueThird,
-  fontFamily: 'AmazonEmberDisplay-Bd'
+  fontFamily: 'AmazonEmberDisplay-Bd',
+  fontFamilyMd: 'AmazonEmberDisplay-Md'
 };
 
 export {defaultTheme, COLORS};

@@ -1,7 +1,9 @@
 //  ENV
 import {API_BASE_URL} from '@env';
 
-const get = async (endpoint: string) => {
+type Endpoints = '/banners' | '/content' | 'channels';
+
+const get = async (endpoint: Endpoints) => {
   try {
     const data = await fetch(API_BASE_URL + endpoint);
     const json = await data.json();
@@ -11,7 +13,7 @@ const get = async (endpoint: string) => {
   }
 };
 
-const post = async (url: string, body?: string) => {
+const post = async (url: Endpoints, body?: string) => {
   const post = await fetch(url, {body});
   return post;
 };

@@ -17,6 +17,7 @@ type ContentCard = {
   id: number;
   name: string;
   url_card: string;
+  duration?: number;
   url_cover?: string;
   episodes?: Array<Episode>;
 };
