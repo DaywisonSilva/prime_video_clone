@@ -4,19 +4,206 @@
       "id": 1,
       "name": "Invincible",
       "url_card": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/invincible-card.jpg",
-      "url_cover": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/invincible-cover.jpeg"
+      "url_cover": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/invincible-cover.jpeg",
+      "episodes": [
+        {
+          "episode": "Episódio 1",
+          "title": "Já estava na hora",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/episodes/episode_1.jpg",
+          "duration": "22:30"
+        },
+        {
+          "episode": "Episódio 2",
+          "title": "Ou vai ou racha",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/episodes/episode_2.jpg",
+          "duration": "21:12"
+        },
+        {
+          "episode": "Episódio 3",
+          "title": "Quem você chamou de feia?",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/episodes/episode_3.jpg",
+          "duration": "23:41"
+        },
+        {
+          "episode": "Episódio 4",
+          "title": "Problemas em Marte",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/episodes/episode_4.jpg",
+          "duration": "22:13"
+        },
+        {
+          "episode": "Episódio 5",
+          "title": "Essa doeu de verdade",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/episodes/episode_5.jpg",
+          "duration": "24:49"
+        },
+        {
+          "episode": "Episódio 6",
+          "title": "Eu só quero o progresso",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/episodes/episode_6.jpg",
+          "duration": "21:26"
+        },
+        {
+          "episode": "Episódio 7",
+          "title": "Precisamos conversar",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/episodes/episode_7.jpg",
+          "duration": "20:59"
+        },
+        {
+          "episode": "Episódio 8",
+          "title": "A verdade",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/episodes/episode_8.jpg",
+          "duration": "20:39"
+        }
+      ]
     },
     {
       "id": 2,
       "name": "The Boys",
       "url_card": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/theboys/theboys-card.jpg",
-      "url_cover": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/theboys/theboys-cover.jpg"
+      "url_cover": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/theboys/theboys-cover.jpg",
+      "episodes": [
+        {
+          "episode": "Episódio 1",
+          "title": "O nome do jogo",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/theboys/episodes/episode_1.jpg",
+          "duration": "22:30"
+        },
+        {
+          "episode": "Episódio 2",
+          "title": "Cherry",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/theboys/episodes/episode_2.jpg",
+          "duration": "21:12"
+        },
+        {
+          "episode": "Episódio 3",
+          "title": "Na Fisura",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/theboys/episodes/episode_3.jpg",
+          "duration": "23:41"
+        },
+        {
+          "episode": "Episódio 4",
+          "title": "A fêmea da espécie",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/theboys/episodes/episode_4.jpg",
+          "duration": "22:13"
+        },
+        {
+          "episode": "Episódio 5",
+          "title": "Bom para a alma",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/theboys/episodes/episode_5.jpg",
+          "duration": "24:49"
+        },
+        {
+          "episode": "Episódio 6",
+          "title": "Os inocentes",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/theboys/episodes/episode_6.jpg",
+          "duration": "21:26"
+        },
+        {
+          "episode": "Episódio 7",
+          "title": "Sociedade da autopreservação",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/theboys/episodes/episode_7.jpg",
+          "duration": "20:59"
+        },
+        {
+          "episode": "Episódio 8",
+          "title": "Achou!",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/theboys/episodes/episode_8.jpg",
+          "duration": "20:39"
+        }
+      ]
     },
     {
       "id": 3,
       "name": "Upload",
       "url_card": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/upload/upload-card.jpg",
-      "url_cover": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/upload/upload-cover.jpg"
+      "url_cover": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/upload/upload-cover.jpg",
+      "episodes": [
+        {
+          "episode": "Episódio 1",
+          "title": "Seja bem-vindo, sr. Brown",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/upload/episodes/episode_1.jpg",
+          "duration": "22:30"
+        },
+        {
+          "episode": "Episódio 2",
+          "title": "Jantar comemorativo",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/upload/episodes/episode_2.jpg",
+          "duration": "21:12"
+        },
+        {
+          "episode": "Episódio 3",
+          "title": "Robin Hood",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/upload/episodes/episode_3.jpg",
+          "duration": "23:41"
+        },
+        {
+          "episode": "Episódio 4",
+          "title": "Dia da família",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/upload/episodes/episode_4.jpg",
+          "duration": "22:13"
+        },
+        {
+          "episode": "Episódio 5",
+          "title": "Mind Frisk",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/upload/episodes/episode_5.jpg",
+          "duration": "24:49"
+        },
+        {
+          "episode": "Episódio 6",
+          "title": "O passeio",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/upload/episodes/episode_6.jpg",
+          "duration": "21:26"
+        },
+        {
+          "episode": "Episódio 7",
+          "title": "Download",
+          "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/upload/episodes/episode_7.jpg",
+          "duration": "20:59"
+        }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "id": 4,
+      "name": "Johnwick",
+      "url_card": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/johnwick/johnwick-card.jpg",
+      "duration": "1h 53min"
+    },
+    {
+      "id": 5,
+      "name": "Extraordinário",
+      "url_card": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/extraordinario/extraordinario-card.png",
+      "duration": "2h 27min"
+    },
+    {
+      "id": 6,
+      "name": "Todo mundo odeia o Chris",
+      "url_card": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/everybodyhateschris/everybodyhateschris-card.jpg",
+      "duration": "1h 43min"
+    },
+    {
+      "id": 7,
+      "name": "Dois homens e meio",
+      "url_card": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/twoandahalfman/twoandahalfmen.jpg",
+      "duration": "2h 05min"
+    }
+  ],
+  "channels": [
+    {
+      "id": 8,
+      "name": "Premiere",
+      "url_card": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/premiere/premiere.png"
+    },
+    {
+      "id": 9,
+      "name": "STARZ Play",
+      "url_card": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/starzplay/starzplay.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Discovery +",
+      "url_card": "https://github.com/DaywisonSilva/prime_video_assets/blob/main/discovery+/discoveryplus.jpeg?raw=true"
     }
   ]
 }
