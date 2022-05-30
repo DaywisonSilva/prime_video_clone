@@ -30,17 +30,19 @@ const StyledEpisodeGroup = styled.View`
 const StyledEpisodeText = styled.Text<TextProps>`
   color: ${COLORS.white};
   font-size: ${props => props.fontSize}px;
-  font-weight: bold;
+  font-family: ${props => props.theme.fontFamily};
 `;
 
 const StyledEpisodeTitle = styled.Text<TextProps>`
   color: ${props => props.theme.textColor};
+  font-family: ${props => props.theme.fontFamilyMd};
   font-size: ${props => props.fontSize}px;
 `;
 
 const StyledEpisodeDuration = styled.Text`
   color: ${COLORS.whiteBlue};
   font-weight: bold;
+  font-family: ${props => props.theme.fontFamilyMd};
   margin-top: 5px;
 `;
 

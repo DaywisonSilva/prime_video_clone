@@ -6,6 +6,7 @@ import SkeletonPlaceholder from 'react-native-skeleton-placeholder';
 
 // utils
 import {COLORS} from '@themes/default';
+import {StyledCardContainer} from './Card.styled';
 
 // types
 type CardProps = ContentCard & {
@@ -18,14 +19,7 @@ function Card({name, url_card, width, height, onPress}: CardProps) {
   const [loading, setLoading] = useState<boolean>(true);
   return (
     <>
-      <View
-        style={{
-          width,
-          height,
-          display: loading ? 'none' : 'flex',
-          overflow: 'hidden',
-          borderRadius: 20
-        }}>
+      <StyledCardContainer width={width} height={height} show={!loading}>
         <TouchableNativeFeedback
           useForeground
           background={TouchableNativeFeedback.Ripple('#ffffff60', true)}
@@ -42,7 +36,7 @@ function Card({name, url_card, width, height, onPress}: CardProps) {
             />
           </View>
         </TouchableNativeFeedback>
-      </View>
+      </StyledCardContainer>
       {loading && (
         <SkeletonPlaceholder
           backgroundColor={COLORS.darkBlueSecondary}

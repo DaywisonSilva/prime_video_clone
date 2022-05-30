@@ -13,6 +13,7 @@ const StyledIconButtonText = styled.Text<StyledIconButtonTextProps>`
   color: ${props => props.theme.textColor};
   margin-left: 6px;
   font-size: ${props => props.fontSize}px;
+  font-family: ${props => props.theme.fontFamilyMd};
   font-weight: bold;
 `;
 
