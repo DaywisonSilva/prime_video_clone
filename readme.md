@@ -43,3 +43,9 @@ Copy the https link, and add a `.env` file (root project)
 // .env
 API_BASE_URL = 'ngrok-https-link';
 ```
+
+Finish, start project:
+
+```bash
+yarn android
+```
