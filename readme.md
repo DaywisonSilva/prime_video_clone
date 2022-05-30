@@ -2,7 +2,7 @@
 
 # Welcome to Prime Video App Clone
 
-To run this project run your terminal:
+To install dependencies run your terminal:
 
 ```bash
 yarn
