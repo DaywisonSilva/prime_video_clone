@@ -1,7 +1,7 @@
 import React from 'react';
 
 //  Components
-import {View, ScrollView} from 'react-native';
+import {View, ScrollView, StatusBar} from 'react-native';
 import {StyledImageBackground, StyledContentOverlay} from './Content.styled';
 
 //  resources
@@ -13,7 +13,6 @@ import {ListTabs} from '@components/molecules';
 import {IconButton} from '@components/atoms';
 import useDimensions from '@hooks/useDimensions';
 import {ListEpisode} from '@components/organisms';
-import BottomTabs from '@routes/BottomTabs';
 
 type Props = StackScreenProps<RootStackParamList, 'Content'>;
 
