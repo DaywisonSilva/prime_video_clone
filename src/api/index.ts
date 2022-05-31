@@ -1,7 +1,7 @@
 //  ENV
 import {API_BASE_URL} from '@env';
 
-type Endpoints = '/banners' | '/content' | 'channels';
+type Endpoints = '/banners' | '/content' | '/channels';
 
 const get = async (endpoint: Endpoints) => {
   try {

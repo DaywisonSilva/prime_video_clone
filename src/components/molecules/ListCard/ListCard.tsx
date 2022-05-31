@@ -1,19 +1,25 @@
-import {Card} from '@components/atoms';
+// hooks
+import React from 'react';
 import useDimensions from '@hooks/useDimensions';
 import {useNavigation} from '@react-navigation/native';
-import {StackNavigationProp} from '@react-navigation/stack';
-import React from 'react';
-import {View} from 'react-native';
-import {FlatList} from 'react-native-gesture-handler';
-import {RFPercentage} from 'react-native-responsive-fontsize';
+
+// components
+import {View, FlatList} from 'react-native';
+import {Card} from '@components/atoms';
 import {
   StyledLabel,
   StyledLabelContainer,
   StyledLabelEmphasis
 } from './ListCard.styled';
 
+// utils
+import {RFPercentage} from 'react-native-responsive-fontsize';
+
+// types
+import {StackNavigationProp} from '@react-navigation/stack';
+
 interface ListCard {
-  cards: Array<Card> | Array<ContentCard>;
+  cards: Array<ContentCard> | Array<Card>;
   isBanner?: boolean;
   label?: string;
   labelEmphasis?: string;

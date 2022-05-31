@@ -1,5 +1,8 @@
+// hooks
 import React from 'react';
-import {Text, TouchableOpacity, View} from 'react-native';
+
+// components
+import {TouchableOpacity} from 'react-native';
 import {StyledTab, StyledTabText} from './Tab.styled';
 
 interface TabProps {

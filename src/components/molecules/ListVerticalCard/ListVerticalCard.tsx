@@ -1,6 +1,8 @@
-import {Card} from '@components/atoms';
+// hooks
 import React from 'react';
-import {Text, View} from 'react-native';
+
+// components
+import {Card} from '@components/atoms';
 import {
   StyledCardContainer,
   StyledInfo,
@@ -11,6 +13,7 @@ import {
   StyledScrollView
 } from './ListVerticalCard.styled';
 
+// types
 interface ListVerticalCardProps {
   cards: Array<ContentCard>;
 }

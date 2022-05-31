@@ -1,16 +1,14 @@
-//Home.tsx
-
-import React, {useEffect} from 'react';
+// hooks
+import React from 'react';
 
 //  Components
 import {ScrollView, View} from 'react-native';
 import {Logo} from '@components/atoms';
 import {StyledHomeView} from './Home.styled';
-
-//  resources
-import {StackScreenProps} from '@react-navigation/stack';
 import {ListCard, ListTabs} from '@components/molecules/';
 
+//  types
+import {StackScreenProps} from '@react-navigation/stack';
 type Props = StackScreenProps<RootStackParamList, 'Home'>;
 
 function Home({route}: Props) {

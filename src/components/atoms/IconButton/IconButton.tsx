@@ -1,10 +1,16 @@
+// hooks
 import React from 'react';
-import {COLORS} from '@themes/default';
-import {Download} from 'react-native-feather';
-import {StyledIconButton, StyledIconButtonText} from './IconButton.styled';
 import useDimensions from '@hooks/useDimensions';
+
+// components
+import {StyledIconButton, StyledIconButtonText} from './IconButton.styled';
+import {Download} from 'react-native-feather';
+
+// utils
+import {COLORS} from '@themes/default';
 import {RFPercentage} from 'react-native-responsive-fontsize';
 
+// types
 interface IconButtonProps {
   label?: string;
   icon: string;

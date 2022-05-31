@@ -1,6 +1,8 @@
+// hooks
 import React from 'react';
+
+// components
 import {TouchableNativeFeedback, View} from 'react-native';
-import {RFPercentage} from 'react-native-responsive-fontsize';
 import {
   StyledEpisode,
   StyledImageEpisode,
@@ -10,6 +12,10 @@ import {
   StyledEpisodeDuration
 } from './Episode.styled';
 
+// utils
+import {RFPercentage} from 'react-native-responsive-fontsize';
+
+// types
 interface EpisodeProps {
   image: string;
   episode: string;

@@ -1,6 +1,9 @@
-import Episode from '@components/molecules/Episode';
+// hooks
 import React from 'react';
+
+// components
 import {ScrollView} from 'react-native';
+import Episode from '@components/molecules/Episode';
 
 function ListEpisode({episodes}: {episodes: Episode[]}) {
   return (

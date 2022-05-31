@@ -1,19 +1,21 @@
+// hooks
 import React from 'react';
+import useDimensions from '@hooks/useDimensions';
 
 //  Components
-import {View, ScrollView, StatusBar} from 'react-native';
+import {View, ScrollView} from 'react-native';
 import {StyledImageBackground, StyledContentOverlay} from './Content.styled';
-
-//  resources
-import {StackScreenProps} from '@react-navigation/stack';
-import LinearGradient from 'react-native-linear-gradient';
-import {COLORS} from '@themes/default';
-import BackButton from '@components/atoms/BackButton';
 import {ListTabs} from '@components/molecules';
+import BackButton from '@components/atoms/BackButton';
 import {IconButton} from '@components/atoms';
-import useDimensions from '@hooks/useDimensions';
 import {ListEpisode} from '@components/organisms';
+import LinearGradient from 'react-native-linear-gradient';
 
+//  utils
+import {COLORS} from '@themes/default';
+
+// types
+import {StackScreenProps} from '@react-navigation/stack';
 type Props = StackScreenProps<RootStackParamList, 'Content'>;
 
 function Content({route, navigation}: Props) {

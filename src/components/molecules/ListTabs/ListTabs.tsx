@@ -1,8 +1,12 @@
-import Tab from '@components/atoms/Tab';
+// hooks
 import React, {useState} from 'react';
+
+// components
 import {View} from 'react-native';
+import Tab from '@components/atoms/Tab';
 import {StyledListTabs} from './ListTabs.styled';
 
+// types
 interface ListTabsProps {
   list: Array<string>;
 }

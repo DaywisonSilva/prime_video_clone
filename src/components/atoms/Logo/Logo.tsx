@@ -1,8 +1,14 @@
+// hooks
 import React from 'react';
-import {Text, View} from 'react-native';
-import {RFPercentage} from 'react-native-responsive-fontsize';
+
+// components
+import {View} from 'react-native';
 import StyledLogoText from './Styled.Logo';
 
+// utils
+import {RFPercentage} from 'react-native-responsive-fontsize';
+
+// types
 interface LogoProps {
   horizontal?: boolean;
   fontSize: number;

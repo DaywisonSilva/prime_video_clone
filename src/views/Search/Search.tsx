@@ -1,3 +1,4 @@
+// hooks
 import React, {useEffect, useState} from 'react';
 
 // Components
@@ -12,9 +13,8 @@ import {
 } from './Search.styled';
 
 // utils
-import {COLORS} from '@themes/default';
-import {Card} from '@components/atoms';
 import API from '@api/index';
+import {COLORS} from '@themes/default';
 
 function Search() {
   const [bannerCards, setBannerCards] = useState<Array<Card | ContentCard>>([]);

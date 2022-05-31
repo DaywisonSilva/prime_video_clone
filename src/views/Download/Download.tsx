@@ -1,6 +1,11 @@
-import {COLORS} from '@themes/default';
+// hooks
 import React from 'react';
+
+// components
 import {View} from 'react-native';
+
+// utils
+import {COLORS} from '@themes/default';
 
 function Download() {
   return (

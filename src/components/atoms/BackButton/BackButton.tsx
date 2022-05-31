@@ -1,6 +1,9 @@
+// hooks
 import React from 'react';
 import {StyledBackButton, StyledTouchableOpacity} from './BackButton.styled';
 import {ChevronLeft} from 'react-native-feather';
+
+// utils
 import {COLORS} from '@themes/default';
 
 interface BackButtonProps {
