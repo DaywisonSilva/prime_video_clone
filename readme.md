@@ -23,6 +23,7 @@ json-server src/api/db.json 3000
 ```
 
 Your terminal shoud be like:
+
 !["Json Server Screenshot"](./src/assets/img/jsonserver.png)
 
 Observe the port of your server (3000)
