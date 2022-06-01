@@ -22,7 +22,7 @@ import {COLORS} from '@themes/default';
 const Tab = createBottomTabNavigator();
 type Props = StackScreenProps<RootStackParamList, 'BottomTabs'>;
 
-export default function BottomTabs({route, navigation}: Props) {
+export default function BottomTabs({route}: Props) {
   const {bannerCards, contentCards, channelCards} = route.params;
   const {width} = useDimensions();
 
