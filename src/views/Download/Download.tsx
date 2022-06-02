@@ -1,19 +1,16 @@
 // hooks
+import Title from '@components/atoms/Title';
 import React from 'react';
+import {Text, View} from 'react-native';
 
 // components
-import {View} from 'react-native';
-
-// utils
-import {COLORS} from '@themes/default';
+import {StyledDownload} from './Download.styled';
 
 function Download() {
   return (
-    <View
-      style={{
-        flex: 1,
-        backgroundColor: COLORS.white
-      }}></View>
+    <StyledDownload>
+      <Title label="Você está offline" />
+    </StyledDownload>
   );
 }
 

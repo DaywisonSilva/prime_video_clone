@@ -1,0 +1,56 @@
+{
+  "id": 1,
+  "name": "Invincible",
+  "url_card": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/invincible-card.jpg",
+  "url_cover": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/invincible-cover.jpeg",
+  "episodes": [
+    {
+      "episode": "Episódio 1",
+      "title": "Já estava na hora",
+      "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/episodes/episode_1.jpg",
+      "duration": "22:30"
+    },
+    {
+      "episode": "Episódio 2",
+      "title": "Ou vai ou racha",
+      "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/episodes/episode_2.jpg",
+      "duration": "21:12"
+    },
+    {
+      "episode": "Episódio 3",
+      "title": "Quem você chamou de feia?",
+      "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/episodes/episode_3.jpg",
+      "duration": "23:41"
+    },
+    {
+      "episode": "Episódio 4",
+      "title": "Problemas em Marte",
+      "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/episodes/episode_4.jpg",
+      "duration": "22:13"
+    },
+    {
+      "episode": "Episódio 5",
+      "title": "Essa doeu de verdade",
+      "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/episodes/episode_5.jpg",
+      "duration": "24:49"
+    },
+    {
+      "episode": "Episódio 6",
+      "title": "Eu só quero o progresso",
+      "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/episodes/episode_6.jpg",
+      "duration": "21:26"
+    },
+    {
+      "episode": "Episódio 7",
+      "title": "Precisamos conversar",
+      "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/episodes/episode_7.jpg",
+      "duration": "20:59"
+    },
+    {
+      "episode": "Episódio 8",
+      "title": "A verdade",
+      "image": "https://raw.githubusercontent.com/DaywisonSilva/prime_video_assets/main/invincible/episodes/episode_8.jpg",
+      "duration": "20:39"
+    }
+  ]
+}

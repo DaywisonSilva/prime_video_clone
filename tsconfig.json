@@ -69,7 +69,8 @@
       "@routes/*": ["routes/*"],
       "@themes/*": ["themes/*"],
       "@assets/*": ["assets/*"],
-      "@api/*": ["api/*"]
+      "@api/*": ["api/*"],
+      "@mocks/*": ["mocks/*"]
     }
   },
   "exclude": [

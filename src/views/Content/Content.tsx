@@ -41,7 +41,7 @@ function Content({route, navigation}: Props) {
             marginLeft: width * 0.07,
             marginBottom: width * 0.08
           }}>
-          <IconButton label="Baixar todos" icon="test" />
+          <IconButton label="Baixar todos" icon="download" />
         </View>
         <ListEpisode episodes={episodes} />
       </ScrollView>

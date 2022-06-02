@@ -15,7 +15,8 @@ module.exports = {
           '@routes': './src/routes',
           '@themes': './src/themes',
           '@assets': './src/assets',
-          '@api': './src/api'
+          '@api': './src/api',
+          '@mocks': './src/mocks'
         }
       }
     ]

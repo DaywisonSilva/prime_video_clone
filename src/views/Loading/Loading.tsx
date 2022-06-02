@@ -23,7 +23,7 @@ function Loading({navigation}: Props) {
     (async () => {
       const netInfo = await NetInfo.fetch();
 
-      if (!netInfo.isConnected) {
+      if (netInfo.isConnected) {
         navigation.replace('Offline');
         return;
       }
