@@ -26,6 +26,9 @@ type CardProps = ContentCard & {
   height: number;
   onPress: () => void;
 };
+
+// services
+import API from '@api/index';
 ```
 
 #
