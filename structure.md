@@ -1,6 +1,6 @@
-# Patern
+# Structure
 
-This document will be used to explain some rules about the patern present in this project. Know some rules:
+This document will be used to explain some rules about the import structure present in this project. Know some rules:
 
 #
 

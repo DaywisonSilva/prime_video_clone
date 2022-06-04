@@ -1,13 +1,24 @@
+import {COLORS} from '@themes/default';
 import {Dimensions} from 'react-native';
 import {RFPercentage} from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 
 const {width, height} = Dimensions.get('screen');
 
-const StyledOfflineContainer = styled.View`
+const StyledOfflineContainer = styled.ScrollView`
   flex: 1;
   background-color: ${props => props.theme.backgroundColor};
+`;
+
+const StyledPadding = styled.View`
   padding: ${height * 0.04}px 33px 0 33px;
+`;
+
+const StyledText = styled.Text`
+  margin-bottom: 20px;
+  color: ${props => props.theme.textColor};
+  font-family: ${props => props.theme.fontFamilyMd};
+  font-size: ${RFPercentage(2)}px;
 `;
 
 const StyledSubtitleOffline = styled.Text`
@@ -18,7 +29,6 @@ const StyledSubtitleOffline = styled.Text`
 `;
 
 const StyledOffilineContainerTitle = styled.View`
-  /* display: flex; */
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
@@ -35,10 +45,24 @@ const StyledOfflineImage = styled.Image`
   margin: ${height * 0.04}px auto 0 auto;
 `;
 
+const StyledCenter = styled.View`
+  align-items: center;
+  margin-top: 20px;
+`;
+
+const StyledInfo = styled.Text`
+  color: ${COLORS.white};
+  font-family: ${props => props.theme.fontFamilyMd};
+`;
+
 export {
   StyledOfflineContainer,
+  StyledPadding,
+  StyledText,
   StyledSubtitleOffline,
   StyledOffilineContainerTitle,
   StyledContainerOfflineImage,
-  StyledOfflineImage
+  StyledOfflineImage,
+  StyledCenter,
+  StyledInfo
 };

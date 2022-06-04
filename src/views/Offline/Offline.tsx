@@ -4,55 +4,64 @@ import useDimensions from '@hooks/useDimensions';
 
 // components
 import {
-  StyledContainerOfflineImage,
+  StyledCenter,
+  StyledInfo,
   StyledOffilineContainerTitle,
   StyledOfflineContainer,
   StyledOfflineImage,
-  StyledSubtitleOffline
+  StyledPadding,
+  StyledSubtitleOffline,
+  StyledText
 } from './Offline.styled';
+import DropShadow from 'react-native-drop-shadow';
 import Title from '@components/atoms/Title';
 import {View} from 'react-native';
 import {IconButton} from '@components/atoms';
-import Svg, {Defs, Ellipse, RadialGradient, Stop} from 'react-native-svg';
+import Button from '@components/atoms/Button';
 
 // utils
 import {COLORS} from '@themes/default';
+import {RFPercentage} from 'react-native-responsive-fontsize';
 
 // mocks
 import offlineData from '@mocks/offline.mock.json';
+import {ListEpisode} from '@components/organisms';
 
 function Offline() {
-  const {width} = useDimensions();
-
   return (
     <StyledOfflineContainer>
-      <StyledOffilineContainerTitle>
-        <View>
-          <Title label="Você está offline" />
-          <StyledSubtitleOffline>Continue assistindo</StyledSubtitleOffline>
-        </View>
-        <IconButton icon="settings" iconColor="#fff" />
-      </StyledOffilineContainerTitle>
-      <StyledContainerOfflineImage>
-        <Svg width={200} height={200}>
-          <Defs>
-            <RadialGradient
-              id="grad"
-              cx="55"
-              cy="125"
-              rx="85"
-              ry="55"
-              fx="150"
-              fy="75"
-              gradientUnits="userSpaceOnUse">
-              <Stop offset="0" stopColor={COLORS.whiteBlue} stopOpacity="1" />
-              <Stop offset="1" stopColor={COLORS.darkBluePrimary} />
-            </RadialGradient>
-          </Defs>
-          <Ellipse cx="55" cy="80" rx="55" ry="55" fill="url(#grad)" />
-        </Svg>
+      <StyledPadding>
+        <StyledOffilineContainerTitle>
+          <View>
+            <Title label="Você está offline" fontSize={RFPercentage(3.5)} />
+            <StyledSubtitleOffline>Continue assistindo</StyledSubtitleOffline>
+          </View>
+          <IconButton icon="settings" iconColor="#fff" />
+        </StyledOffilineContainerTitle>
+      </StyledPadding>
+      <DropShadow
+        style={{
+          shadowColor: COLORS.whiteBlue,
+          shadowOffset: {
+            width: 0,
+            height: 5
+          },
+          shadowOpacity: 0.3,
+          shadowRadius: 30
+        }}>
         <StyledOfflineImage source={{uri: offlineData.url_cover}} />
-      </StyledContainerOfflineImage>
+      </DropShadow>
+      <StyledCenter>
+        <Title label="Invincible" />
+        <StyledInfo>5 º episódio | 02:45</StyledInfo>
+      </StyledCenter>
+      <StyledCenter>
+        <Button label="Continue assistindo" />
+      </StyledCenter>
+      <StyledPadding>
+        <StyledText>Outros Downloads</StyledText>
+      </StyledPadding>
+      <ListEpisode episodes={offlineData.episodes} />
     </StyledOfflineContainer>
   );
 }
