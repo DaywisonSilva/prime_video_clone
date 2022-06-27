@@ -1,6 +1,6 @@
 !["Prime Video Background"](./src/assets/img/cover.png)
 
-# Welcome to Prime Video App Clone
+# Welcome to Prime Video Clone App
 
 To install dependencies run your terminal:
 
